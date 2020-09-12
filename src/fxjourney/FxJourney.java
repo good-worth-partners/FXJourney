@@ -47,6 +47,7 @@ public class FxJourney extends Application {
             }
         });
         frame.setTitle("GWPL POS");
+        frame.add(browser, BorderLayout.CENTER);
         frame.setSize(1000, 600);
         frame.setVisible(true);
         frame.setIconImage(img.getImage());
