@@ -12,7 +12,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.scene.text.Font;
+import java.awt.Font;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javax.swing.ImageIcon;
@@ -36,10 +36,8 @@ public class FxJourney extends Application {
 
         ImageIcon img = new ImageIcon("Image/House.jpg");
         JourneyBrowserView browser = new JourneyBrowserView(url);
-        Font.font(20);
         JFrame frame = new JFrame();
         frame.getContentPane().add(browser, BorderLayout.CENTER);
-        frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 browser.getCefApp().dispose();
@@ -50,7 +48,7 @@ public class FxJourney extends Application {
         frame.setSize(1000, 600);
         frame.setVisible(true);
         frame.setIconImage(img.getImage());
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);      
+        //frame.setFont(new Font("Calabri",Font.ITALIC, 36));
     }
 
     @Override
