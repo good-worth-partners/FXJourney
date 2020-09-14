@@ -11,13 +11,10 @@ import java.awt.event.WindowAdapter;
 import java.io.FileReader;
 import java.io.IOException;
 import javafx.application.Application;
-import javafx.application.Platform;
-import java.awt.Font;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.WindowConstants;
 import org.ini4j.*;
 
 /**
